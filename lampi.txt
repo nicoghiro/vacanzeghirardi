@@ -1,0 +1,7 @@
+per cancellazzione mettere un carattere speciale alla fine della riga nel file di salvataggio per riconoscere il piatto cancellato, durante la ricerca usare lo split per capire il carattere finale , $ se non cancellato £ se cancelato , se il carattere è uguale a £ da non visualizzare nelle ricerche e nel menu , aggiungere in file apposito e visualizzare nella pagina dei piatti cancellati , per recuperare il piatto selezionarlo dal menu della ripresa e tramite split modificare nell'array la posizione del £ con $ e poi riscriverlo nel file dei piatti 
+
+struttura stringa
+id/nome/portata/ingrediente-ingradiente-ingrediente/simbolo cancellazzione(£|$)
+
+esempio
+00001/pizza/primo/impasto-pomodoro-mozzarella/$
