@@ -36,17 +36,25 @@ namespace WindowsFormsApp1
                 line = sr.ReadLine();
                 if (line.Contains(id))
                 {
-                    
-                    string[] voto = line.Split(sep);
-                    
-                    ricercato.id = voto[0];
-                    ricercato.nome = voto[1];
-                    ricercato.portata = voto[2];
-                    ricercato.ingredienti = voto[3];
-                    ricercato.prezzo = decimal.Parse(voto[4]);
-                    int verifica = ricercacl(ricercato.id, @"./cancellati.csv");
-                    if (verifica == 0) { 
-                    return ricercato;
+                    string[] voti = line.Split(sep);
+                    if (id == voti[0])
+                    {
+
+
+                        string[] voto = line.Split(sep);
+
+                        ricercato.id = voto[0];
+                        ricercato.nome = voto[1];
+                        ricercato.portata = voto[2];
+                        ricercato.ingredienti = voto[3];
+                        ricercato.prezzo = decimal.Parse(voto[4]);
+                        int verifica = ricercacl(ricercato.id, @"./cancellati.csv");
+                        if (verifica == 0)
+                        {
+                            sr.Close();
+                            return ricercato;
+
+                        }
                     }
                 }
             }sr.Close();
@@ -71,7 +79,10 @@ namespace WindowsFormsApp1
                 line = sr.ReadLine();
                 if (line.Contains(id))
                 {
+                    string[] voto = line.Split(sep);
+                    if (id == voto[0]) { 
                     cont++;
+                    }
                 }
             }
             sr.Close();

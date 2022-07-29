@@ -60,6 +60,7 @@ namespace WindowsFormsApp1
                 line = sr.ReadLine();
                 if (line.Contains(id))
                 {
+
                     pippo = false;
                     return pippo;
                 }
@@ -89,6 +90,11 @@ namespace WindowsFormsApp1
             public string ingredienti;
             public decimal prezzo;
            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

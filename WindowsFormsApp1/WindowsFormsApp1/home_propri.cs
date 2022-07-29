@@ -45,5 +45,13 @@ namespace WindowsFormsApp1
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            modifica Form1 = new modifica();
+            Form1.ShowDialog();
+            this.Close();
+        }
     }
 }
