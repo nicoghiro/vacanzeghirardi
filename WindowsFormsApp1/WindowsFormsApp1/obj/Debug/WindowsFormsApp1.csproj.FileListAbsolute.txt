@@ -10,3 +10,4 @@ C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsA
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.cliente.resources
+C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.nuovoutente.resources

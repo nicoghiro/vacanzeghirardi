@@ -58,11 +58,23 @@
     <Compile Include="cliente.Designer.cs">
       <DependentUpon>cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="home_propri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home_propri.Designer.cs">
+      <DependentUpon>home_propri.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nuovoutente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nuovoutente.Designer.cs">
+      <DependentUpon>nuovoutente.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nuovoutente.resx">
+      <DependentUpon>nuovoutente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
