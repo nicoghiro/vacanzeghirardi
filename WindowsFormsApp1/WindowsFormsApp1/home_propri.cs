@@ -53,5 +53,13 @@ namespace WindowsFormsApp1
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            eliminazione Form1 = new eliminazione();
+            Form1.ShowDialog();
+            this.Close();
+        }
     }
 }

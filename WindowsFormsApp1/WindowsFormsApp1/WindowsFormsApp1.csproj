@@ -64,6 +64,12 @@
     <Compile Include="cliente.Designer.cs">
       <DependentUpon>cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="eliminazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminazione.Designer.cs">
+      <DependentUpon>eliminazione.cs</DependentUpon>
+    </Compile>
     <Compile Include="home_propri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cliente.resx">
       <DependentUpon>cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminazione.resx">
+      <DependentUpon>eliminazione.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home_propri.resx">
       <DependentUpon>home_propri.cs</DependentUpon>
