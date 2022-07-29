@@ -70,6 +70,7 @@ namespace WindowsFormsApp1
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 22);
             this.textBox1.TabIndex = 11;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -114,6 +115,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label2);
             this.Name = "nuovoutente";
             this.Text = "nuovoutente";
+            this.Load += new System.EventHandler(this.nuovoutente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

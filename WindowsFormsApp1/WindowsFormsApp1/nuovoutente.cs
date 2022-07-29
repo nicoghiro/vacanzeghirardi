@@ -46,5 +46,15 @@ namespace WindowsFormsApp1
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuovoutente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

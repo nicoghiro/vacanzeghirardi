@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class home_propri
+    partial class modifica
     {
         /// <summary>
         /// Required designer variable.
@@ -29,30 +29,8 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(77, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 69);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "aggiungi piatti";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(213, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 69);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "ricerca piatti";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -60,21 +38,18 @@ namespace WindowsFormsApp1
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 17);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 16;
             this.label1.Text = "torna alla pagina precedente";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // home_propri
+            // modifica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "home_propri";
-            this.Text = "home_propri";
-            this.Load += new System.EventHandler(this.home_propri_Load);
+            this.Name = "modifica";
+            this.Text = "modifica";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,8 +57,6 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
     }
 }
