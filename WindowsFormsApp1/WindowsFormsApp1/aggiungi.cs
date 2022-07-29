@@ -73,7 +73,10 @@ namespace WindowsFormsApp1
                 if (line.Contains(id))
                 {
                     pippo = false;
+                    sr.Close();
+                    sp.Close();
                     return pippo;
+                    
                 }
             }
             sr.Close();

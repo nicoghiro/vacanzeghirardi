@@ -61,5 +61,21 @@ namespace WindowsFormsApp1
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formatta Form1 = new formatta();
+            Form1.ShowDialog();
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            recupero Form1 = new recupero();
+            Form1.ShowDialog();
+            this.Close();
+        }
     }
 }

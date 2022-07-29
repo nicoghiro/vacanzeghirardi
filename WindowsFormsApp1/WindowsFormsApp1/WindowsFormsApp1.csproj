@@ -70,6 +70,12 @@
     <Compile Include="eliminazione.Designer.cs">
       <DependentUpon>eliminazione.cs</DependentUpon>
     </Compile>
+    <Compile Include="formatta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formatta.Designer.cs">
+      <DependentUpon>formatta.cs</DependentUpon>
+    </Compile>
     <Compile Include="home_propri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recupero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recupero.Designer.cs">
+      <DependentUpon>recupero.cs</DependentUpon>
+    </Compile>
     <Compile Include="ricerca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eliminazione.resx">
       <DependentUpon>eliminazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formatta.resx">
+      <DependentUpon>formatta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home_propri.resx">
       <DependentUpon>home_propri.cs</DependentUpon>
@@ -135,6 +150,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="recupero.resx">
+      <DependentUpon>recupero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ricerca.resx">
       <DependentUpon>ricerca.cs</DependentUpon>
     </EmbeddedResource>
