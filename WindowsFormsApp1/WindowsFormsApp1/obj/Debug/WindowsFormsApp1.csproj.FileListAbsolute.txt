@@ -18,3 +18,4 @@ C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsA
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.eliminazione.resources
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.formatta.resources
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.recupero.resources
+C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.visualizza.resources

@@ -60,9 +60,14 @@ namespace WindowsFormsApp1
                 line = sr.ReadLine();
                 if (line.Contains(id))
                 {
+                    string[] voto = line.Split(sep);
+                    if (id == voto[0])
+                    {
+                        pippo = false;
+                        return pippo;
+                    }
 
-                    pippo = false;
-                    return pippo;
+                    
                 }
             }
             StreamReader sp = new StreamReader(filename2);
@@ -72,11 +77,14 @@ namespace WindowsFormsApp1
                 line = sp.ReadLine();
                 if (line.Contains(id))
                 {
-                    pippo = false;
-                    sr.Close();
-                    sp.Close();
-                    return pippo;
-                    
+                    string[] voto = line.Split(sep);
+                    if (id == voto[0])
+                    {
+                        pippo = false;
+                        return pippo;
+                    }
+
+
                 }
             }
             sr.Close();

@@ -37,6 +37,13 @@ namespace WindowsFormsApp1
 
             System.IO.File.Delete(@"./cancellati.csv");
             System.IO.File.Move(@"./temp.csv", @"./cancellati.csv");
+            StreamWriter sr = new StreamWriter(@"./aggiungi.csv");
+            sr.WriteLine("sdfgjklsdhyuifhkd");
+            sr.Close();
+            StreamWriter so = new StreamWriter(@"./cancellati.csv");
+            so.WriteLine("suidfghsdjklfgsdf");
+            so.Close();
+
         }
     }
 }

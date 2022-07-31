@@ -114,6 +114,12 @@
     <Compile Include="ricerca.Designer.cs">
       <DependentUpon>ricerca.cs</DependentUpon>
     </Compile>
+    <Compile Include="visualizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizza.Designer.cs">
+      <DependentUpon>visualizza.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="acc-propieta.resx">
       <DependentUpon>acc-propieta.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ricerca.resx">
       <DependentUpon>ricerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizza.resx">
+      <DependentUpon>visualizza.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

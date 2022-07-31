@@ -70,6 +70,7 @@ namespace WindowsFormsApp1
             int cont1 = 0;
             StreamReader sr = new StreamReader(filename);
             string line = "";
+            line = sr.ReadLine();
             while (!sr.EndOfStream)
             {
                 line = sr.ReadLine();
@@ -87,6 +88,7 @@ namespace WindowsFormsApp1
             StreamReader sp = new StreamReader(filename);
             string line1 = "";
             int cont2 = 0;
+            line1 = sp.ReadLine();
             while (!sp.EndOfStream)
             {
                 line1 = sp.ReadLine();

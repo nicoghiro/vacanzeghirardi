@@ -77,5 +77,18 @@ namespace WindowsFormsApp1
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            visualizza Form1 = new visualizza();
+            Form1.ShowDialog();
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
