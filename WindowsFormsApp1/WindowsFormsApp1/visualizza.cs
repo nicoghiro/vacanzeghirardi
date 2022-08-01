@@ -23,20 +23,67 @@ namespace WindowsFormsApp1
         {
             menù=ricerca1(@"./aggiungi.csv");
             int cont4 = 0;
-            int x = 70; int y = 50;
+            int x = 300; int ay = 41;
+             int py = 148;
+            int sy =270;
+            int dy = 360;
             while (cont4 < menù.Length)
             {
-              
-                
+                if(menù[cont4].portata=="antipasto")
+                    {
+
                     menù[cont4].testo = new Label();
                     this.Controls.Add(menù[cont4].testo);
-                    menù[cont4].testo.Location = new Point(x, y);
+                    menù[cont4].testo.Location = new Point(x, ay);
                     menù[cont4].testo.Size = new Size(400, 15);
                     menù[cont4].testo.Name = Convert.ToString(cont4);
-                    y = y + 20;
-                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].portata + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo;
-                    
-                
+                    ay = ay + 15;
+                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome +  " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo+" €";
+
+
+                }
+                if (menù[cont4].portata == "primo")
+                {
+
+                    menù[cont4].testo = new Label();
+                    this.Controls.Add(menù[cont4].testo);
+                    menù[cont4].testo.Location = new Point(x, py);
+                    menù[cont4].testo.Size = new Size(400, 15);
+                    menù[cont4].testo.Name = Convert.ToString(cont4);
+                    py = py +15;
+                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+
+
+                }
+                if (menù[cont4].portata == "secondo")
+                {
+
+                    menù[cont4].testo = new Label();
+                    this.Controls.Add(menù[cont4].testo);
+                    menù[cont4].testo.Location = new Point(x, sy);
+                    menù[cont4].testo.Size = new Size(400, 15);
+                    menù[cont4].testo.Name = Convert.ToString(cont4);
+                    sy = sy + 15;
+                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " "  + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+
+
+                }
+                if (menù[cont4].portata == "dolce")
+                {
+
+                    menù[cont4].testo = new Label();
+                    this.Controls.Add(menù[cont4].testo);
+                    menù[cont4].testo.Location = new Point(x, dy);
+                    menù[cont4].testo.Size = new Size(400, 15);
+                    menù[cont4].testo.Name = Convert.ToString(cont4);
+                    dy = dy + 15;
+                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+
+
+                }
+
+
+              
                 cont4++;
             }
         }
@@ -96,7 +143,7 @@ namespace WindowsFormsApp1
             while (!sp.EndOfStream)
             {
                 line = sp.ReadLine();
-                MessageBox.Show(line);
+               
 
                 string[] voti = line.Split(sep);
                 verifica = ricercacl(voti[0], @"./cancellati.csv");
