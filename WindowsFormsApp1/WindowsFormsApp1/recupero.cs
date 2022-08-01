@@ -78,7 +78,8 @@ namespace WindowsFormsApp1
                 cont = ricercacl(voto[0], @"./cancellati.csv", ';');
                 if (cont == 1)
                 {
-                    cont1++;
+                    if (voto[5] != "£") { 
+                    cont1++;}
                 }
 
 
@@ -94,15 +95,20 @@ namespace WindowsFormsApp1
                 line1 = sp.ReadLine();
                 string[] voti = line1.Split(sep);
                 cont = ricercacl(voti[0], @"./cancellati.csv", ';');
-                if (cont == 1)
+                
+                
+                    if (cont == 1)
                 {
-                    recupera[cont2].id = voti[0];
-                    recupera[cont2].nome = voti[1];
-                    recupera[cont2].portata = voti[2];
-                    recupera[cont2].ingredienti = voti[3];
-                    recupera[cont2].prezzo = Convert.ToDecimal(voti[4]);
-                    recupera[cont2].carattere = voti[5];
-                    cont2++;
+                        if (voti[5] != "£")
+                        {
+                            recupera[cont2].id = voti[0];
+                            recupera[cont2].nome = voti[1];
+                            recupera[cont2].portata = voti[2];
+                            recupera[cont2].ingredienti = voti[3];
+                            recupera[cont2].prezzo = Convert.ToDecimal(voti[4]);
+                            recupera[cont2].carattere = voti[5];
+                            cont2++;
+                        }
 
                 }
 
