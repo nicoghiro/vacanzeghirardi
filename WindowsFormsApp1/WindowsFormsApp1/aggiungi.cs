@@ -33,6 +33,11 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text))
+            {
+                MessageBox.Show("è obbligatorio inserire tutti i parametri del piatto ");
+            }
+            else { 
             bool verifica = ricerca(textBox1.Text, @"./aggiungi.csv", @"./cancellati.csv");
             if (verifica == true)
             {
@@ -41,6 +46,7 @@ namespace WindowsFormsApp1
             else
             {
                 throw new Exception("id gia presente");
+            }
             }
         }
         public static void scriviAppend(string filename, string content)

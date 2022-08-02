@@ -26,60 +26,73 @@ namespace WindowsFormsApp1
             int x = 300; int ay = 41;
              int py = 148;
             int sy =270;
-            int dy = 360;
+            int dy = 375;
+            int ox = 680;int oy = 115;
             while (cont4 < menù.Length)
             {
-                if(menù[cont4].portata=="antipasto")
+                if(menù[cont4].portata == "antipasto" || menù[cont4].portata == "primo"|| menù[cont4].portata == "secondo"|| menù[cont4].portata == "dolce"){
+                    if (menù[cont4].portata == "antipasto")
                     {
 
-                    menù[cont4].testo = new Label();
-                    this.Controls.Add(menù[cont4].testo);
-                    menù[cont4].testo.Location = new Point(x, ay);
-                    menù[cont4].testo.Size = new Size(400, 15);
-                    menù[cont4].testo.Name = Convert.ToString(cont4);
-                    ay = ay + 15;
-                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome +  " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo+" €";
+                        menù[cont4].testo = new Label();
+                        this.Controls.Add(menù[cont4].testo);
+                        menù[cont4].testo.Location = new Point(x, ay);
+                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Name = Convert.ToString(cont4);
+                        ay = ay + 15;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
 
 
+                    }
+                    if (menù[cont4].portata == "primo")
+                    {
+
+                        menù[cont4].testo = new Label();
+                        this.Controls.Add(menù[cont4].testo);
+                        menù[cont4].testo.Location = new Point(x, py);
+                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Name = Convert.ToString(cont4);
+                        py = py + 15;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+
+
+                    }
+                    if (menù[cont4].portata == "secondo")
+                    {
+
+                        menù[cont4].testo = new Label();
+                        this.Controls.Add(menù[cont4].testo);
+                        menù[cont4].testo.Location = new Point(x, sy);
+                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Name = Convert.ToString(cont4);
+                        sy = sy + 15;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+
+
+                    }
+                    if (menù[cont4].portata == "dolce")
+                    {
+
+                        menù[cont4].testo = new Label();
+                        this.Controls.Add(menù[cont4].testo);
+                        menù[cont4].testo.Location = new Point(x, dy);
+                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Name = Convert.ToString(cont4);
+                        dy = dy + 15;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+
+
+                    }
                 }
-                if (menù[cont4].portata == "primo")
+                else
                 {
-
                     menù[cont4].testo = new Label();
                     this.Controls.Add(menù[cont4].testo);
-                    menù[cont4].testo.Location = new Point(x, py);
+                    menù[cont4].testo.Location = new Point(ox, oy);
                     menù[cont4].testo.Size = new Size(400, 15);
                     menù[cont4].testo.Name = Convert.ToString(cont4);
-                    py = py +15;
+                    oy = oy + 15;
                     menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-
-
-                }
-                if (menù[cont4].portata == "secondo")
-                {
-
-                    menù[cont4].testo = new Label();
-                    this.Controls.Add(menù[cont4].testo);
-                    menù[cont4].testo.Location = new Point(x, sy);
-                    menù[cont4].testo.Size = new Size(400, 15);
-                    menù[cont4].testo.Name = Convert.ToString(cont4);
-                    sy = sy + 15;
-                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " "  + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-
-
-                }
-                if (menù[cont4].portata == "dolce")
-                {
-
-                    menù[cont4].testo = new Label();
-                    this.Controls.Add(menù[cont4].testo);
-                    menù[cont4].testo.Location = new Point(x, dy);
-                    menù[cont4].testo.Size = new Size(400, 15);
-                    menù[cont4].testo.Name = Convert.ToString(cont4);
-                    dy = dy + 15;
-                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-
-
                 }
 
 

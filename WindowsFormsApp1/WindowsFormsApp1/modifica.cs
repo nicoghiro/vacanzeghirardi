@@ -105,6 +105,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             trovato = ricerca1(textBox1.Text, @"./aggiungi.csv");
             if (trovato.id != "987654321001126319")
             {
@@ -118,6 +119,7 @@ namespace WindowsFormsApp1
             {
                 throw new Exception("id piatto non trovato");
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -128,20 +130,28 @@ namespace WindowsFormsApp1
             modifiche.portata = textBox4.Text;
             modifiche.ingredienti = textBox5.Text;
             modifiche.prezzo = Convert.ToDecimal(textBox6.Text);
-            if (trovato.id== modifiche.id && trovato.nome == modifiche.nome && trovato.portata == modifiche.portata && trovato.ingredienti == modifiche.ingredienti && trovato.prezzo == modifiche.prezzo)
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox5.Text)||string.IsNullOrWhiteSpace(textBox6.Text))
+            {
+                MessageBox.Show("è obbligatorio inserire tutti i parametri del piatto ");
+            }
+            else
             {
 
-            }
-            else 
-            {
-                if (trovato.id != modifiche.id)
+                if (trovato.id == modifiche.id && trovato.nome == modifiche.nome && trovato.portata == modifiche.portata && trovato.ingredienti == modifiche.ingredienti && trovato.prezzo == modifiche.prezzo)
                 {
-                    scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "£");
-                    scriviAppend(@"./aggiungi.csv", modifiche.id + ";" + modifiche.nome + ";" + modifiche.portata + ";" + modifiche.ingredienti + ";" + modifiche.prezzo );
+
                 }
                 else
                 {
-                    throw new Exception("è obbligatorio la modifica dell'id");
+                    if (trovato.id != modifiche.id)
+                    {
+                        scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "£");
+                        scriviAppend(@"./aggiungi.csv", modifiche.id + ";" + modifiche.nome + ";" + modifiche.portata + ";" + modifiche.ingredienti + ";" + modifiche.prezzo);
+                    }
+                    else
+                    {
+                        throw new Exception("è obbligatorio la modifica dell'id");
+                    }
                 }
             }
         }
