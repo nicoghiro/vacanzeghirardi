@@ -114,6 +114,12 @@
     <Compile Include="ricerca.Designer.cs">
       <DependentUpon>ricerca.cs</DependentUpon>
     </Compile>
+    <Compile Include="ricompatta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ricompatta.Designer.cs">
+      <DependentUpon>ricompatta.cs</DependentUpon>
+    </Compile>
     <Compile Include="visualizza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ricerca.resx">
       <DependentUpon>ricerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ricompatta.resx">
+      <DependentUpon>ricompatta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="visualizza.resx">
       <DependentUpon>visualizza.cs</DependentUpon>

@@ -45,5 +45,10 @@ namespace WindowsFormsApp1
             so.Close();
 
         }
+
+        private void formatta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -89,6 +89,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "formatta";
             this.Text = "formatta";
+            this.Load += new System.EventHandler(this.formatta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
