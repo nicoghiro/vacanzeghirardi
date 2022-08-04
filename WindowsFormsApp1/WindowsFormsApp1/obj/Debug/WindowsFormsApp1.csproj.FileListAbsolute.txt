@@ -20,3 +20,5 @@ C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsA
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.recupero.resources
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.visualizza.resources
 C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ricompatta.resources
+C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.aggiungi_cliente.resources
+C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ordine.resources

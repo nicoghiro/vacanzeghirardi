@@ -24,5 +24,21 @@ namespace WindowsFormsApp1
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            aggiungi_cliente Form1 = new aggiungi_cliente();
+            Form1.ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ordine Form1 = new ordine();
+            Form1.ShowDialog();
+            this.Close();
+        }
     }
 }

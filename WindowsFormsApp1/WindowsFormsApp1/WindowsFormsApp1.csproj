@@ -58,6 +58,12 @@
     <Compile Include="aggiungi.Designer.cs">
       <DependentUpon>aggiungi.cs</DependentUpon>
     </Compile>
+    <Compile Include="aggiungi_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aggiungi_cliente.Designer.cs">
+      <DependentUpon>aggiungi_cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="nuovoutente.Designer.cs">
       <DependentUpon>nuovoutente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ordine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ordine.Designer.cs">
+      <DependentUpon>ordine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="recupero.cs">
@@ -132,6 +144,9 @@
     <EmbeddedResource Include="aggiungi.resx">
       <DependentUpon>aggiungi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="aggiungi_cliente.resx">
+      <DependentUpon>aggiungi_cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cliente.resx">
       <DependentUpon>cliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="nuovoutente.resx">
       <DependentUpon>nuovoutente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordine.resx">
+      <DependentUpon>ordine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
