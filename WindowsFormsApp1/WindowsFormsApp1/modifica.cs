@@ -147,10 +147,14 @@ namespace WindowsFormsApp1
                     {
                         scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "£");
                         scriviAppend(@"./aggiungi.csv", modifiche.id + ";" + modifiche.nome + ";" + modifiche.portata + ";" + modifiche.ingredienti + ";" + modifiche.prezzo);
+                        this.Hide();
+                        modifica Form1 = new modifica();
+                        Form1.ShowDialog();
+                        this.Close();
                     }
                     else
                     {
-                        throw new Exception("è obbligatorio la modifica dell'id");
+                        MessageBox.Show("è obbligatorio la modifica dell'id");
                     }
                 }
             }
@@ -177,7 +181,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                throw new Exception("id piatto non trovato");
+                MessageBox.Show("id piatto non trovato");
             }
 
         }

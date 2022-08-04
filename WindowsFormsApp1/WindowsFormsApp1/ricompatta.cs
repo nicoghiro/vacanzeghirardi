@@ -137,6 +137,7 @@ namespace WindowsFormsApp1
             {
                 scriviAppend(@"./aggiungi.csv", menù[cont].id + ";" + menù[cont].nome + ";" + menù[cont].portata + ";" + menù[cont].ingredienti + ";" + menù[cont].prezzo);
             }
+            MessageBox.Show("il file è stato ricompattato");
         }
 
         private void button2_Click(object sender, EventArgs e)

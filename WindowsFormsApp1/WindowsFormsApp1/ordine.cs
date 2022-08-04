@@ -213,6 +213,10 @@ namespace WindowsFormsApp1
             so.WriteLine("suidfghsdjklfgsdf");
             so.Close();
             scriviAppend(@"./registroordini.csv", "##################################################");
+            this.Hide();
+            ordine Form1 = new ordine();
+            Form1.ShowDialog();
+            this.Close();
         }
         public static void scriviAppend(string filename, string content)
         {

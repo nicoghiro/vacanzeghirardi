@@ -142,7 +142,11 @@ namespace WindowsFormsApp1
             int nuovoid = random.Next(1, 100000);
             scriviAppend(@"./aggiungi.csv", nuovoid + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti + ";" + semirecu[point].prezzo);
             scriviAppend(@"./cancellati.csv", semirecu[point].id + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti + ";" + semirecu[point].prezzo+";"+"$");
-           
+            this.Hide();
+            recupero Form1 = new recupero();
+            Form1.ShowDialog();
+            this.Close();
+
         }
         public static int Identifica(piattocanc[]piatti, Label label)
         {

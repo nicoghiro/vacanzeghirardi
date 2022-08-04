@@ -110,10 +110,11 @@ namespace WindowsFormsApp1
             {
 
                 scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "$");
+                MessageBox.Show("piatto cancellato");
             }
             else
             {
-                throw new Exception("id piatto non trovato");
+                MessageBox.Show("id piatto non trovato");
             }
         }
 
