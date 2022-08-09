@@ -26,6 +26,22 @@ namespace WindowsFormsApp1
             scriviAppend(@"./temp.csv", textBox2.Text);
             System.IO.File.Delete(@"./credenziali.csv");
             System.IO.File.Move(@"./temp.csv", @"./credenziali.csv");
+            StreamWriter sz = new StreamWriter(@"./temp.csv");
+            sz.Close();
+
+            System.IO.File.Delete(@"./aggiungi.csv");
+            System.IO.File.Move(@"./temp.csv", @"./aggiungi.csv");
+            StreamWriter sT = new StreamWriter(@"./temp.csv");
+            sT.Close();
+
+            System.IO.File.Delete(@"./cancellati.csv");
+            System.IO.File.Move(@"./temp.csv", @"./cancellati.csv");
+            StreamWriter sr = new StreamWriter(@"./aggiungi.csv");
+            sr.WriteLine("sdfgjklsdhyuifhkd");
+            sr.Close();
+            StreamWriter so = new StreamWriter(@"./cancellati.csv");
+            so.WriteLine("suidfghsdjklfgsdf");
+            so.Close();
             this.Hide();
             acc_propieta Form1 = new acc_propieta();
             Form1.ShowDialog();
@@ -53,6 +69,11 @@ namespace WindowsFormsApp1
         }
 
         private void nuovoutente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button3
@@ -80,6 +81,7 @@ namespace WindowsFormsApp1
             this.label3.Size = new System.Drawing.Size(138, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "Nuovo Nome utente ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -101,11 +103,21 @@ namespace WindowsFormsApp1
             this.label1.Text = "torna alla pagina precedente";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(240, 366);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(312, 17);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "i dati del precedente utente cverranno formattati";
+            // 
             // nuovoutente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox2);
@@ -130,5 +142,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
     }
 }
