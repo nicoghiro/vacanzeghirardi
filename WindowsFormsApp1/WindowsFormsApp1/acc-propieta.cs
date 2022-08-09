@@ -129,7 +129,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                throw new Exception("credenziali errate");
+                MessageBox.Show("credenziali errate");
             }
         }
     }

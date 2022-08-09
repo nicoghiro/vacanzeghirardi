@@ -111,6 +111,10 @@ namespace WindowsFormsApp1
 
                 scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "$");
                 MessageBox.Show("piatto cancellato");
+                this.Hide();
+                eliminazione Form1 = new eliminazione();
+                Form1.ShowDialog();
+                this.Close();
             }
             else
             {
