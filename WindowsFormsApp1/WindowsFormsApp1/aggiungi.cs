@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                throw new Exception("id gia presente");
+                MessageBox.Show("id gia presente");
             }
             }
         }
