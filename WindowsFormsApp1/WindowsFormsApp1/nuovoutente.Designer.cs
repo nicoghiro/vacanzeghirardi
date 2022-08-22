@@ -108,9 +108,10 @@ namespace WindowsFormsApp1
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(240, 366);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(312, 17);
+            this.label5.Size = new System.Drawing.Size(305, 17);
             this.label5.TabIndex = 16;
-            this.label5.Text = "i dati del precedente utente cverranno formattati";
+            this.label5.Text = "i dati del precedente utente verranno formattati";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // nuovoutente
             // 
