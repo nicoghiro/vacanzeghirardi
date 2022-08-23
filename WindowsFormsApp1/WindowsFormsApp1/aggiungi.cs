@@ -42,8 +42,14 @@ namespace WindowsFormsApp1
             if (verifica == true)
             {
                 scriviAppend(@"./aggiungi.csv", textBox1.Text + ";" + textBox2.Text + ";" + textBox3.Text + ";" + textBox4.Text+";"+numericUpDown1.Value);
-            }
-            else
+                    MessageBox.Show("piatto aggiunto");
+                    this.Hide();
+                    aggiungi Form1 = new aggiungi();
+                    Form1.ShowDialog();
+                    this.Close();
+
+                }
+                else
             {
                 MessageBox.Show("id gia presente");
             }
