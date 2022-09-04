@@ -113,7 +113,7 @@ namespace WindowsFormsApp1
                 textBox3.Text = trovato.nome;
                 comboBox1.Text = trovato.portata;
                 textBox5.Text = trovato.ingredienti;
-                textBox6.Text = Convert.ToString(trovato.prezzo);
+                numericUpDown1.Value = Convert.ToDecimal(trovato.prezzo);
             }
             else
             {
@@ -129,8 +129,8 @@ namespace WindowsFormsApp1
             modifiche.nome = textBox3.Text;
             modifiche.portata = comboBox1.Text;
             modifiche.ingredienti = textBox5.Text;
-            modifiche.prezzo = Convert.ToDecimal(textBox6.Text);
-            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(textBox5.Text)||string.IsNullOrWhiteSpace(textBox6.Text))
+            modifiche.prezzo = numericUpDown1.Value;
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(textBox5.Text)  || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(textBox5.Text))
             {
                 MessageBox.Show("è obbligatorio inserire tutti i parametri del piatto ");
             }
@@ -140,6 +140,10 @@ namespace WindowsFormsApp1
                 if (trovato.id == modifiche.id && trovato.nome == modifiche.nome && trovato.portata == modifiche.portata && trovato.ingredienti == modifiche.ingredienti && trovato.prezzo == modifiche.prezzo)
                 {
 
+                }
+                if(textBox2.Text.Contains(';') || textBox3.Text.Contains(';') || textBox5.Text.Contains(';') || comboBox1.Text.Contains(';'))
+                {
+                    MessageBox.Show("si richiede di non inserire il carattere ';'");
                 }
                 else
                 {
@@ -177,7 +181,7 @@ namespace WindowsFormsApp1
                 textBox3.Text = trovato.nome;
                 comboBox1.Text = trovato.portata;
                 textBox5.Text = trovato.ingredienti;
-                textBox6.Text = Convert.ToString(trovato.prezzo);
+                numericUpDown1.Value = trovato.prezzo;
             }
             else
             {

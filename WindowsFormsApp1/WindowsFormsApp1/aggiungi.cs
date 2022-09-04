@@ -38,6 +38,11 @@ namespace WindowsFormsApp1
                 MessageBox.Show("è obbligatorio inserire tutti i parametri del piatto ");
             }
             else { 
+                if(textBox1.Text.Contains(';')|| textBox2.Text.Contains(';')|| comboBox1.Text.Contains(';')|| textBox4.Text.Contains(';'))
+                {
+                    MessageBox.Show("si richiede di non inserire il carattere ';'");
+                }
+                else { 
             bool verifica = ricerca(textBox1.Text, @"./aggiungi.csv", @"./cancellati.csv");
             if (verifica == true)
             {
@@ -58,7 +63,7 @@ namespace WindowsFormsApp1
                     this.Close();
                 }
             }
-        }
+        }}
         public static void scriviAppend(string filename, string content)
         {
             var oStream = new FileStream(filename, FileMode.Append, FileAccess.Write, FileShare.Read);
@@ -80,6 +85,8 @@ namespace WindowsFormsApp1
                     if (id == voto[0])
                     {
                         pippo = false;
+                        sr.Close();
+                       
                         return pippo;
                     }
 
@@ -97,6 +104,8 @@ namespace WindowsFormsApp1
                     if (id == voto[0])
                     {
                         pippo = false;
+                        sr.Close();
+                        sp.Close();
                         return pippo;
                     }
 
