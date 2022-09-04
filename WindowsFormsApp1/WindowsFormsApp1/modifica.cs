@@ -111,7 +111,7 @@ namespace WindowsFormsApp1
             {
                 textBox2.Text = trovato.id;
                 textBox3.Text = trovato.nome;
-                textBox4.Text = trovato.portata;
+                comboBox1.Text = trovato.portata;
                 textBox5.Text = trovato.ingredienti;
                 textBox6.Text = Convert.ToString(trovato.prezzo);
             }
@@ -127,10 +127,10 @@ namespace WindowsFormsApp1
             piatto modifiche;
             modifiche.id = textBox2.Text;
             modifiche.nome = textBox3.Text;
-            modifiche.portata = textBox4.Text;
+            modifiche.portata = comboBox1.Text;
             modifiche.ingredienti = textBox5.Text;
             modifiche.prezzo = Convert.ToDecimal(textBox6.Text);
-            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox5.Text)||string.IsNullOrWhiteSpace(textBox6.Text))
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(textBox5.Text)||string.IsNullOrWhiteSpace(textBox6.Text))
             {
                 MessageBox.Show("è obbligatorio inserire tutti i parametri del piatto ");
             }
@@ -175,7 +175,7 @@ namespace WindowsFormsApp1
             {
                 textBox2.Text = trovato.id;
                 textBox3.Text = trovato.nome;
-                textBox4.Text = trovato.portata;
+                comboBox1.Text = trovato.portata;
                 textBox5.Text = trovato.ingredienti;
                 textBox6.Text = Convert.ToString(trovato.prezzo);
             }

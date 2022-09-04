@@ -189,5 +189,10 @@ namespace WindowsFormsApp1
             public Label testo;
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
