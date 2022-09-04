@@ -98,5 +98,21 @@ namespace WindowsFormsApp1
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ordine Form1 = new ordine();
+            Form1.ShowDialog();
+            this.Close();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            cronologia Form1 = new cronologia();
+            Form1.ShowDialog();
+            this.Close();
+        }
     }
 }

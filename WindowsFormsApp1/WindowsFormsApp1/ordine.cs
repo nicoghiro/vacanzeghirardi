@@ -225,6 +225,14 @@ namespace WindowsFormsApp1
             sw.WriteLine(content);
             sw.Close();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            acc_propieta Form1 = new acc_propieta();
+            Form1.ShowDialog();
+            this.Close();
+        }
     }
 }
 

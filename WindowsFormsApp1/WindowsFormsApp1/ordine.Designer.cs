@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -43,9 +44,9 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 17);
+            this.label1.Size = new System.Drawing.Size(140, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "torna alla pagina precedente";
+            this.label1.Text = "torna al menu cliente";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
@@ -103,11 +104,22 @@ namespace WindowsFormsApp1
             this.label7.TabIndex = 36;
             this.label7.Text = "prezzo totale";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(790, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(172, 17);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "torna al menu proprietario";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // ordine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
@@ -132,5 +144,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }

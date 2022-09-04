@@ -46,3 +46,4 @@ C:\Users\aless\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Deb
 C:\Users\aless\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\aless\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\aless\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\nicolas\OneDrive\Desktop\vacanzeghirardi\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.cronologia.resources

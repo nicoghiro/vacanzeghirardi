@@ -43,7 +43,13 @@ namespace WindowsFormsApp1
             StreamWriter so = new StreamWriter(@"./cancellati.csv");
             so.WriteLine("suidfghsdjklfgsdf");
             so.Close();
+            StreamWriter sy = new StreamWriter(@"./temp.csv");
+            sy.Close();
+
+            System.IO.File.Delete(@"./registroordini.csv");
+            System.IO.File.Move(@"./temp.csv", @"./registroordini.csv");
             MessageBox.Show("formattazzione avvenuta");
+
 
         }
 
