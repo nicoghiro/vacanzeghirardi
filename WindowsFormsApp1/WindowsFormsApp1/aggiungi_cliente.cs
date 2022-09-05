@@ -50,7 +50,7 @@ namespace WindowsFormsApp1
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         ay = ay + 15;
                         menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-                       // menù[cont4].testo.Click += new EventHandler(label_Click);
+                       menù[cont4].testo.Click += new EventHandler(label_Click);
                         
                     }
                     if (menù[cont4].portata == "primo")
@@ -63,7 +63,7 @@ namespace WindowsFormsApp1
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         py = py + 15;
                         menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-                       // menù[cont4].testo.Click += new EventHandler(label_Click);
+                       menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
                     if (menù[cont4].portata == "secondo")
@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         sy = sy + 15;
                         menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-                      //  menù[cont4].testo.Click += new EventHandler(label_Click);
+                      menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
                     if (menù[cont4].portata == "dolce")
@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         dy = dy + 15;
                         menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-                        //menù[cont4].testo.Click += new EventHandler(label_Click);
+                        menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
                 }
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
                     menù[cont4].testo.Name = Convert.ToString(cont4);
                     oy = oy + 15;
                     menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
-                   // menù[cont4].testo.Click += new EventHandler(label_Click);
+                   menù[cont4].testo.Click += new EventHandler(label_Click);
                 }
 
 
@@ -180,7 +180,7 @@ namespace WindowsFormsApp1
 
             return piatti;
         }
-        /* public void label_Click(object sender, EventArgs e)
+        public void label_Click(object sender, EventArgs e)
         {
             Label label = sender as Label;
             int point = Identifica(menù, label);
@@ -198,10 +198,12 @@ namespace WindowsFormsApp1
                 if (piatti[i].testo.Name == label.Name)
                 {
                     return i;
+                    
                 }
+                i++;
             }
             return i;
-        }*/
+        }
         public static void scriviAppend(string filename, string content)
         {
             var oStream = new FileStream(filename, FileMode.Append, FileAccess.Write, FileShare.Read);
@@ -305,6 +307,11 @@ namespace WindowsFormsApp1
             {
                 throw new Exception("id piatto non trovato");
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

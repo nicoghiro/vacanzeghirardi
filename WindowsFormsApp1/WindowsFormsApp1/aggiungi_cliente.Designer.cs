@@ -30,7 +30,6 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,15 +48,6 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 2;
             this.label1.Text = "torna alla pagina precedente";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(720, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 17);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "altro";
             // 
             // label5
             // 
@@ -129,7 +119,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -146,7 +135,6 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
