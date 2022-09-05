@@ -293,21 +293,7 @@ namespace WindowsFormsApp1
             return cont;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            piatto trovato = ricerca1(textBox1.Text, @"./aggiungi.csv");
-            if (trovato.id != "987654321001126319")
-            {
-                scriviAppend(@"./ordine.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo);
-                scriviAppend(@"./registroordini.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo);
-                MessageBox.Show("piatto ordinato");
-                
-            }
-            else
-            {
-                throw new Exception("id piatto non trovato");
-            }
-        }
+        
 
         private void label6_Click(object sender, EventArgs e)
         {
