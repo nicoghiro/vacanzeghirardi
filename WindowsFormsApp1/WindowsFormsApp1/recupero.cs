@@ -157,6 +157,7 @@ namespace WindowsFormsApp1
                 {
                     return i;
                 }
+                i++;
             }
             return i;
         }

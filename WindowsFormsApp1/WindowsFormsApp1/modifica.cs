@@ -117,7 +117,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                throw new Exception("id piatto non trovato");
+                MessageBox.Show("id piatto non trovato");
             }
             
         }
