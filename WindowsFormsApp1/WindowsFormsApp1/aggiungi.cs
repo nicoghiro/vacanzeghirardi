@@ -57,10 +57,7 @@ namespace WindowsFormsApp1
                 else
             {
                 MessageBox.Show("id gia presente");
-                    this.Hide();
-                    aggiungi Form1 = new aggiungi();
-                    Form1.ShowDialog();
-                    this.Close();
+                    
                 }
             }
         }}
