@@ -149,12 +149,20 @@ namespace WindowsFormsApp1
                 {
                     if (trovato.id != modifiche.id)
                     {
-                        scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "£");
-                        scriviAppend(@"./aggiungi.csv", modifiche.id + ";" + modifiche.nome + ";" + modifiche.portata + ";" + modifiche.ingredienti + ";" + modifiche.prezzo);
-                        this.Hide();
-                        modifica Form1 = new modifica();
-                        Form1.ShowDialog();
-                        this.Close();
+                        DialogResult dialogResult = MessageBox.Show("sei sicuro di voler recuperare il piatto?", "recupero", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "£");
+                            scriviAppend(@"./aggiungi.csv", modifiche.id + ";" + modifiche.nome + ";" + modifiche.portata + ";" + modifiche.ingredienti + ";" + modifiche.prezzo);
+                            this.Hide();
+                            modifica Form1 = new modifica();
+                            Form1.ShowDialog();
+                            this.Close();
+                        }
+                        else if(dialogResult == DialogResult.No)
+                        {
+
+                        }
                     }
                     else
                     {

@@ -136,6 +136,8 @@ namespace WindowsFormsApp1
         }
         public void label_Click(object sender, EventArgs e)
         {
+            DialogResult dialogResult = MessageBox.Show("sei sicuro di voler recuperare il piatto?","recupero" , MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes) { 
             Label label = sender as Label;
             int point = Identifica(semirecu, label);
             Random random = new Random();
@@ -146,6 +148,11 @@ namespace WindowsFormsApp1
             recupero Form1 = new recupero();
             Form1.ShowDialog();
             this.Close();
+            }
+            else if(dialogResult == DialogResult.No)
+            {
+
+            }
 
         }
         public static int Identifica(piattocanc[]piatti, Label label)

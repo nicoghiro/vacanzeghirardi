@@ -108,13 +108,20 @@ namespace WindowsFormsApp1
             trovato = ricerca1(textBox1.Text, @"./aggiungi.csv");
             if (trovato.id != "987654321001126319")
             {
+                DialogResult dialogResult = MessageBox.Show("sei sicuro di voler recuperare il piatto?", "recupero", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "$");
+                    MessageBox.Show("piatto cancellato");
+                    this.Hide();
+                    eliminazione Form1 = new eliminazione();
+                    Form1.ShowDialog();
+                    this.Close();
+                }
+                else if(dialogResult == DialogResult.No)
+                {
 
-                scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "$");
-                MessageBox.Show("piatto cancellato");
-                this.Hide();
-                eliminazione Form1 = new eliminazione();
-                Form1.ShowDialog();
-                this.Close();
+                }
             }
             else
             {
