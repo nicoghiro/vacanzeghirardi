@@ -34,6 +34,7 @@ namespace WindowsFormsApp1
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -82,11 +83,22 @@ namespace WindowsFormsApp1
             this.label2.TabIndex = 22;
             this.label2.Text = "antipasti";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(727, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(235, 17);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "premi sul piatto che vuoi recuperare";
+            this.label6.Click += new System.EventHandler(this.label6_Click_1);
+            // 
             // aggiungi_cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 471);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -107,5 +119,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
     }
 }

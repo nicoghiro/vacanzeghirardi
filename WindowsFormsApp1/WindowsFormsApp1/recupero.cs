@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
                     semirecu[cont4].testo.Size = new Size(400, 15);
                     semirecu[cont4].testo.Name = Convert.ToString(cont4);
                     y = y + 20;
-                    semirecu[cont4].testo.Text = semirecu[cont4].id + " " + semirecu[cont4].nome + " " + semirecu[cont4].portata + " " + semirecu[cont4].ingredienti + " " + semirecu[cont4].prezzo;
+                    semirecu[cont4].testo.Text = semirecu[cont4].id + " " + semirecu[cont4].nome + " " + semirecu[cont4].portata + " " + semirecu[cont4].ingredienti + " " + semirecu[cont4].prezzo+"€";
                     semirecu[cont4].testo.Click += new EventHandler(label_Click);
                 }
                 cont4++;
