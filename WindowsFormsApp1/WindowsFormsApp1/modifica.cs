@@ -149,7 +149,7 @@ namespace WindowsFormsApp1
                 {
                     if (trovato.id != modifiche.id)
                     {
-                        DialogResult dialogResult = MessageBox.Show("sei sicuro di voler recuperare il piatto?", "recupero", MessageBoxButtons.YesNo);
+                        DialogResult dialogResult = MessageBox.Show("sei sicuro di voler modificare il piatto?", "modifica", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
                             scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "£");

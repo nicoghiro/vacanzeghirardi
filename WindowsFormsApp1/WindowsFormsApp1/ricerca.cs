@@ -108,11 +108,11 @@ namespace WindowsFormsApp1
                 label4.Text = trovato.nome;
                 label5.Text = trovato.portata;
                 label6.Text = trovato.ingredienti;
-                label7.Text = Convert.ToString(trovato.prezzo);
+                label7.Text = Convert.ToString(trovato.prezzo+"€");
             }
             else
             {
-                throw new Exception("id piatto non trovato");
+                MessageBox.Show("id piatto non trovato");
             }
         }
     }
