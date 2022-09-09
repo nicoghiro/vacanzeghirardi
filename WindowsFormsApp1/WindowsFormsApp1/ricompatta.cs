@@ -80,8 +80,11 @@ namespace WindowsFormsApp1
                     piatti[cont2].id = voti[0];
                     piatti[cont2].nome = voti[1];
                     piatti[cont2].portata = voti[2];
-                    piatti[cont2].ingredienti = voti[3];
-                    piatti[cont2].prezzo = decimal.Parse(voti[4]);
+                    piatti[cont2].ingredienti1 = voti[3];
+                    piatti[cont2].ingredienti2 = voti[4];
+                    piatti[cont2].ingredienti3 = voti[5];
+                    piatti[cont2].ingredienti4 = voti[6];
+                    piatti[cont2].prezzo = decimal.Parse(voti[7]);
                     cont2++;
                 }
             }
@@ -98,7 +101,10 @@ namespace WindowsFormsApp1
             public string id;
             public string nome;
             public string portata;
-            public string ingredienti;
+            public string ingredienti1;
+            public string ingredienti2;
+            public string ingredienti3;
+            public string ingredienti4;
             public decimal prezzo;
             public string carattere;
             public Label testo;
@@ -135,7 +141,7 @@ namespace WindowsFormsApp1
             so.Close();
             for (int cont = 0; cont < menù.Length; cont++)
             {
-                scriviAppend(@"./aggiungi.csv", menù[cont].id + ";" + menù[cont].nome + ";" + menù[cont].portata + ";" + menù[cont].ingredienti + ";" + menù[cont].prezzo);
+                scriviAppend(@"./aggiungi.csv", menù[cont].id + ";" + menù[cont].nome + ";" + menù[cont].portata + ";" + menù[cont].ingredienti1 + ";" + menù[cont].ingredienti2 + ";" + menù[cont].ingredienti3 + ";" + menù[cont].ingredienti4 + ";" + menù[cont].prezzo);
             }
             MessageBox.Show("il file è stato ricompattato");
         }

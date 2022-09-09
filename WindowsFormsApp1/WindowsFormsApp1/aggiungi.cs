@@ -33,12 +33,12 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(textBox4.Text))
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox5.Text) || string.IsNullOrWhiteSpace(textBox6.Text))
             {
                 MessageBox.Show("è obbligatorio inserire tutti i parametri del piatto ");
             }
             else { 
-                if(textBox1.Text.Contains(';')|| textBox2.Text.Contains(';')|| comboBox1.Text.Contains(';')|| textBox4.Text.Contains(';'))
+                if(textBox1.Text.Contains(';')|| textBox2.Text.Contains(';')|| comboBox1.Text.Contains(';')|| textBox4.Text.Contains(';') || textBox3.Text.Contains(';') || textBox5.Text.Contains(';') || textBox6.Text.Contains(';'))
                 {
                     MessageBox.Show("si richiede di non inserire il carattere ';'");
                 }
@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
             bool verifica = ricerca(textBox1.Text, @"./aggiungi.csv", @"./cancellati.csv");
             if (verifica == true)
             {
-                scriviAppend(@"./aggiungi.csv", textBox1.Text + ";" + textBox2.Text + ";" + comboBox1.Text + ";" + textBox4.Text+";"+numericUpDown1.Value);
+                scriviAppend(@"./aggiungi.csv", textBox1.Text + ";" + textBox2.Text + ";" + comboBox1.Text + ";" + textBox4.Text+";"+textBox3.Text + ";" + textBox5.Text + ";" + textBox6.Text + ";" + numericUpDown1.Value);
                     MessageBox.Show("piatto aggiunto");
                     this.Hide();
                     aggiungi Form1 = new aggiungi();
@@ -120,7 +120,10 @@ namespace WindowsFormsApp1
             public string id;
             public string nome;
             public string portata;
-            public string ingredienti;
+            public string ingredienti1;
+                public string ingredienti2;
+            public string ingredienti3;
+            public string ingredienti4;
             public decimal prezzo;
            
         }

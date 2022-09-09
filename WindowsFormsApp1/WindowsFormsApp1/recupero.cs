@@ -27,10 +27,10 @@ namespace WindowsFormsApp1
                     semirecu[cont4].testo = new Label();
                     this.Controls.Add(semirecu[cont4].testo);
                     semirecu[cont4].testo.Location = new Point(x, y);
-                    semirecu[cont4].testo.Size = new Size(400, 15);
+                    semirecu[cont4].testo.Size = new Size(600, 20);
                     semirecu[cont4].testo.Name = Convert.ToString(cont4);
                     y = y + 20;
-                    semirecu[cont4].testo.Text = semirecu[cont4].id + " " + semirecu[cont4].nome + " " + semirecu[cont4].portata + " " + semirecu[cont4].ingredienti + " " + semirecu[cont4].prezzo+"€";
+                    semirecu[cont4].testo.Text = semirecu[cont4].id + " " + semirecu[cont4].nome + " " + semirecu[cont4].portata + " " + semirecu[cont4].ingredienti1 + " " + semirecu[cont4].ingredienti2 + " " + semirecu[cont4].ingredienti3 + " " + semirecu[cont4].ingredienti4 + " " + semirecu[cont4].prezzo+"€";
                     semirecu[cont4].testo.Click += new EventHandler(label_Click);
                 }
                 cont4++;
@@ -75,10 +75,11 @@ namespace WindowsFormsApp1
             {
                 line = sr.ReadLine();
                 string[] voto = line.Split(sep);
+                
                 cont = ricercacl(voto[0], @"./cancellati.csv", ';');
                 if (cont == 1)
                 {
-                    if (voto[5] != "£") { 
+                    if (voto[8] != "£") { 
                     cont1++;}
                 }
 
@@ -99,14 +100,17 @@ namespace WindowsFormsApp1
                 
                     if (cont == 1)
                 {
-                        if (voti[5] != "£")
+                        if (voti[8] != "£")
                         {
                             recupera[cont2].id = voti[0];
                             recupera[cont2].nome = voti[1];
                             recupera[cont2].portata = voti[2];
-                            recupera[cont2].ingredienti = voti[3];
-                            recupera[cont2].prezzo = Convert.ToDecimal(voti[4]);
-                            recupera[cont2].carattere = voti[5];
+                            recupera[cont2].ingredienti1 = voti[3];
+                        recupera[cont2].ingredienti2 = voti[4];
+                        recupera[cont2].ingredienti3 = voti[5];
+                        recupera[cont2].ingredienti4 = voti[6];
+                        recupera[cont2].prezzo = Convert.ToDecimal(voti[7]);
+                            recupera[cont2].carattere = voti[8];
                             cont2++;
                         }
 
@@ -123,7 +127,10 @@ namespace WindowsFormsApp1
             public string id;
             public string nome;
             public string portata;
-            public string ingredienti;
+            public string ingredienti1;
+            public string ingredienti2;
+            public string ingredienti3;
+            public string ingredienti4;
             public decimal prezzo;
             public string carattere;
             public Label testo;
@@ -142,8 +149,8 @@ namespace WindowsFormsApp1
             int point = Identifica(semirecu, label);
             Random random = new Random();
             int nuovoid = random.Next(1, 100000);
-            scriviAppend(@"./aggiungi.csv", nuovoid + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti + ";" + semirecu[point].prezzo);
-            scriviAppend(@"./cancellati.csv", semirecu[point].id + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti + ";" + semirecu[point].prezzo+";"+"$");
+            scriviAppend(@"./aggiungi.csv", nuovoid + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti1 + ";" + semirecu[point].ingredienti2 + ";" + semirecu[point].ingredienti3 + ";" + semirecu[point].ingredienti4 + ";" + semirecu[point].prezzo);
+            scriviAppend(@"./cancellati.csv", semirecu[point].id + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti1 + ";" + semirecu[point].ingredienti2 + ";" + semirecu[point].ingredienti3 + ";" + semirecu[point].ingredienti4 + ";" + semirecu[point].prezzo+";"+"$");
             this.Hide();
             recupero Form1 = new recupero();
             Form1.ShowDialog();

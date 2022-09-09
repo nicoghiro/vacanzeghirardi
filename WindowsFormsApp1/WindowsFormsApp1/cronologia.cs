@@ -37,9 +37,9 @@ namespace WindowsFormsApp1
                 Label piatto = new Label();
                 this.Controls.Add(piatto);
                 piatto.Location = new Point(x, ay);
-                piatto.Size = new Size(400, 15);
+                piatto.Size = new Size(400, 20);
                 piatto.Text = line;
-                ay = ay + 15;
+                ay = ay + 20;
             }
             sr.Close();
         }

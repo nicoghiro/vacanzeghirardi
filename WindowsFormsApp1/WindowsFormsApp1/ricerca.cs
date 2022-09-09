@@ -46,8 +46,11 @@ namespace WindowsFormsApp1
                         ricercato.id = voto[0];
                         ricercato.nome = voto[1];
                         ricercato.portata = voto[2];
-                        ricercato.ingredienti = voto[3];
-                        ricercato.prezzo = decimal.Parse(voto[4]);
+                        ricercato.ingredienti1 = voto[3];
+                        ricercato.ingredienti2 = voto[4];
+                        ricercato.ingredienti3 = voto[5];
+                        ricercato.ingredienti4 = voto[6];
+                        ricercato.prezzo = decimal.Parse(voto[7]);
                         int verifica = ricercacl(ricercato.id, @"./cancellati.csv");
                         if (verifica == 0)
                         {
@@ -63,7 +66,10 @@ namespace WindowsFormsApp1
             
             ntrovato.nome = "0";
             ntrovato.portata = "0";
-            ntrovato.ingredienti = "0";
+            ntrovato.ingredienti1 = "0";
+            ntrovato.ingredienti2 = "0";
+            ntrovato.ingredienti3 = "0";
+            ntrovato.ingredienti4 = "0";
             ntrovato.prezzo = 20;
 
             
@@ -94,7 +100,10 @@ namespace WindowsFormsApp1
             public string id;
             public string nome;
             public string portata;
-            public string ingredienti;
+            public string ingredienti1;
+            public string ingredienti2;
+            public string ingredienti3;
+            public string ingredienti4;
             public decimal prezzo;
 
         }
@@ -107,7 +116,10 @@ namespace WindowsFormsApp1
                 label3.Text = trovato.id;
                 label4.Text = trovato.nome;
                 label5.Text = trovato.portata;
-                label6.Text = trovato.ingredienti;
+                label6.Text = trovato.ingredienti1;
+                label8.Text = trovato.ingredienti2;
+                label9.Text = trovato.ingredienti3;
+                label10.Text = trovato.ingredienti4;
                 label7.Text = Convert.ToString(trovato.prezzo+"€");
             }
             else

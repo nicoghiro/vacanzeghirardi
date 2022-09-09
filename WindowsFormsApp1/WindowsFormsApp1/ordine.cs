@@ -45,11 +45,11 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, ay);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         spesatot = spesatot + menù[cont4].prezzo;
-                        ay = ay + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        ay = ay + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
 
 
                     }
@@ -59,11 +59,11 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, py);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         spesatot = spesatot + menù[cont4].prezzo;
-                        py = py + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        py = py + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
 
 
                     }
@@ -73,11 +73,11 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, sy);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         spesatot = spesatot + menù[cont4].prezzo;
-                        sy = sy + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        sy = sy + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
 
 
                     }
@@ -87,11 +87,11 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, dy);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         spesatot = spesatot + menù[cont4].prezzo;
-                        dy = dy + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        dy = dy + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
 
 
                     }
@@ -101,11 +101,11 @@ namespace WindowsFormsApp1
                     menù[cont4].testo = new Label();
                     this.Controls.Add(menù[cont4].testo);
                     menù[cont4].testo.Location = new Point(ox, oy);
-                    menù[cont4].testo.Size = new Size(400, 15);
+                    menù[cont4].testo.Size = new Size(400, 20);
                     menù[cont4].testo.Name = Convert.ToString(cont4);
                     spesatot = spesatot + menù[cont4].prezzo;
-                    oy = oy + 15;
-                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                    oy = oy + 20;
+                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
                 }
                 
 
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
             Label spesa = new Label();
                 this.Controls.Add(spesa);
                 spesa.Location = new Point(85, 185);
-                spesa.Size = new Size(50, 15);
+                spesa.Size = new Size(50, 20);
             spesa.Text = Convert.ToString(spesatot)+" €";
         }
 
@@ -177,8 +177,11 @@ namespace WindowsFormsApp1
                     piatti[cont2].id = voti[0];
                     piatti[cont2].nome = voti[1];
                     piatti[cont2].portata = voti[2];
-                    piatti[cont2].ingredienti = voti[3];
-                    piatti[cont2].prezzo = decimal.Parse(voti[4]);
+                    piatti[cont2].ingredienti1 = voti[3];
+                    piatti[cont2].ingredienti2 = voti[4];
+                    piatti[cont2].ingredienti3 = voti[5];
+                    piatti[cont2].ingredienti4 = voti[6];
+                    piatti[cont2].prezzo = decimal.Parse(voti[7]);
                     cont2++;
                 }
             }
@@ -195,7 +198,10 @@ namespace WindowsFormsApp1
             public string id;
             public string nome;
             public string portata;
-            public string ingredienti;
+            public string ingredienti1;
+            public string ingredienti2;
+            public string ingredienti3;
+            public string ingredienti4;
             public decimal prezzo;
             public string carattere;
             public Label testo;

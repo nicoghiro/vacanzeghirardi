@@ -47,8 +47,11 @@ namespace WindowsFormsApp1
                         ricercato.id = voto[0];
                         ricercato.nome = voto[1];
                         ricercato.portata = voto[2];
-                        ricercato.ingredienti = voto[3];
-                        ricercato.prezzo = decimal.Parse(voto[4]);
+                        ricercato.ingredienti1 = voto[3];
+                        ricercato.ingredienti2 = voto[4];
+                        ricercato.ingredienti3 = voto[5];
+                        ricercato.ingredienti4 = voto[6];
+                        ricercato.prezzo = decimal.Parse(voto[7]);
                         int verifica = ricercacl(ricercato.id, @"./cancellati.csv");
                         if (verifica == 0)
                         {
@@ -65,7 +68,10 @@ namespace WindowsFormsApp1
 
             ntrovato.nome = "0";
             ntrovato.portata = "0";
-            ntrovato.ingredienti = "0";
+            ntrovato.ingredienti1 = "0";
+            ntrovato.ingredienti2 = "0";
+            ntrovato.ingredienti3 = "0";
+            ntrovato.ingredienti4 = "0";
             ntrovato.prezzo = 20;
 
 
@@ -98,7 +104,10 @@ namespace WindowsFormsApp1
             public string id;
             public string nome;
             public string portata;
-            public string ingredienti;
+            public string ingredienti1;
+            public string ingredienti2;
+            public string ingredienti3;
+            public string ingredienti4;
             public decimal prezzo;
 
         }
@@ -111,7 +120,7 @@ namespace WindowsFormsApp1
                 DialogResult dialogResult = MessageBox.Show("sei sicuro di voler eliminare il piatto?", "eliminazione", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti + ";" + trovato.prezzo + ";" + "$");
+                    scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti1 + ";" + trovato.ingredienti2 + ";" + trovato.ingredienti3 + ";" + trovato.ingredienti4 + ";" + trovato.prezzo + ";" + "$");
                     MessageBox.Show("piatto cancellato");
                     this.Hide();
                     eliminazione Form1 = new eliminazione();

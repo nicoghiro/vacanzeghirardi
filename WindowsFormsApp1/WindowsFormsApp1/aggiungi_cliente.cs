@@ -46,10 +46,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, ay);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
-                        ay = ay + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        ay = ay + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
                        menù[cont4].testo.Click += new EventHandler(label_Click);
                         
                     }
@@ -59,10 +59,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, py);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
-                        py = py + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        py = py + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
                        menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
@@ -72,10 +72,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, sy);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
-                        sy = sy + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        sy = sy + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
                       menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
@@ -85,10 +85,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, dy);
-                        menù[cont4].testo.Size = new Size(400, 15);
+                        menù[cont4].testo.Size = new Size(400,20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
-                        dy = dy + 15;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                        dy = dy + 20;
+                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
                         menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
@@ -98,10 +98,10 @@ namespace WindowsFormsApp1
                     menù[cont4].testo = new Label();
                     this.Controls.Add(menù[cont4].testo);
                     menù[cont4].testo.Location = new Point(ox, oy);
-                    menù[cont4].testo.Size = new Size(400, 15);
+                    menù[cont4].testo.Size = new Size(400, 20);
                     menù[cont4].testo.Name = Convert.ToString(cont4);
-                    oy = oy + 15;
-                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti + " " + menù[cont4].prezzo + " €";
+                    oy = oy + 20;
+                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
                    menù[cont4].testo.Click += new EventHandler(label_Click);
                 }
 
@@ -169,8 +169,11 @@ namespace WindowsFormsApp1
                     piatti[cont2].id = voti[0];
                     piatti[cont2].nome = voti[1];
                     piatti[cont2].portata = voti[2];
-                    piatti[cont2].ingredienti = voti[3];
-                    piatti[cont2].prezzo = decimal.Parse(voti[4]);
+                    piatti[cont2].ingredienti1 = voti[3];
+                    piatti[cont2].ingredienti2 = voti[4];
+                    piatti[cont2].ingredienti3 = voti[5];
+                    piatti[cont2].ingredienti4 = voti[6];
+                    piatti[cont2].prezzo = decimal.Parse(voti[7]);
                     cont2++;
                 }
             }
@@ -186,8 +189,8 @@ namespace WindowsFormsApp1
             int point = Identifica(menù, label);
             MessageBox.Show("piatto ordinato");
            
-            scriviAppend(@"./ordine.csv", menù[point].id + ";" + menù[point].nome + ";" + menù[point].portata + ";" + menù[point].ingredienti + ";" + menù[point].prezzo);
-            scriviAppend(@"./registroordini.csv", menù[point].id + ";" + menù[point].nome + ";" + menù[point].portata + ";" + menù[point].ingredienti + ";" + menù[point].prezzo);
+            scriviAppend(@"./ordine.csv", menù[point].id + ";" + menù[point].nome + ";" + menù[point].portata + ";" + menù[point].ingredienti1 + ";" + menù[point].ingredienti2 + ";" + menù[point].ingredienti3 + ";" + menù[point].ingredienti4 + ";" + menù[point].prezzo);
+            scriviAppend(@"./registroordini.csv", menù[point].id + ";" + menù[point].nome + ";" + menù[point].portata + ";" + menù[point].ingredienti1 + ";" + menù[point].ingredienti2 + ";" + menù[point].ingredienti3 + ";" + menù[point].ingredienti4 + ";" + menù[point].prezzo);
             
         }
         public static int Identifica(piatto[] piatti, Label label)
@@ -218,7 +221,10 @@ namespace WindowsFormsApp1
             public string id;
             public string nome;
             public string portata;
-            public string ingredienti;
+            public string ingredienti1;
+            public string ingredienti2;
+            public string ingredienti3;
+            public string ingredienti4;
             public decimal prezzo;
             public string carattere;
             public Label testo;
@@ -245,8 +251,11 @@ namespace WindowsFormsApp1
                         ricercato.id = voto[0];
                         ricercato.nome = voto[1];
                         ricercato.portata = voto[2];
-                        ricercato.ingredienti = voto[3];
-                        ricercato.prezzo = decimal.Parse(voto[4]);
+                        ricercato.ingredienti1 = voto[3];
+                        ricercato.ingredienti2 = voto[4];
+                        ricercato.ingredienti3 = voto[5];
+                        ricercato.ingredienti4 = voto[6];
+                        ricercato.prezzo = decimal.Parse(voto[7]);
                         ricercato.carattere = "0";
                          ricercato.testo = new Label();
                         int verifica = ricerca(ricercato.id, @"./cancellati.csv");
@@ -265,7 +274,10 @@ namespace WindowsFormsApp1
 
             ntrovato.nome = "0";
             ntrovato.portata = "0";
-            ntrovato.ingredienti = "0";
+            ntrovato.ingredienti1 = "0";
+            ntrovato.ingredienti2 = "0";
+            ntrovato.ingredienti3 = "0";
+            ntrovato.ingredienti4 = "0";
             ntrovato.prezzo = 20;
             ntrovato.carattere = "0";
             ntrovato.testo = new Label();
@@ -301,6 +313,11 @@ namespace WindowsFormsApp1
         }
 
         private void label6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
