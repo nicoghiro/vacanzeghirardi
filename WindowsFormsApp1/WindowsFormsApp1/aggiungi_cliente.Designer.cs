@@ -89,9 +89,9 @@ namespace WindowsFormsApp1
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(727, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(235, 17);
+            this.label6.Size = new System.Drawing.Size(218, 17);
             this.label6.TabIndex = 26;
-            this.label6.Text = "premi sul piatto che vuoi recuperare";
+            this.label6.Text = "premi sul piatto che vuoi ordinare";
             this.label6.Click += new System.EventHandler(this.label6_Click_1);
             // 
             // aggiungi_cliente

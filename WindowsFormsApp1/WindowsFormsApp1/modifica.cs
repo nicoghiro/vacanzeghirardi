@@ -177,26 +177,35 @@ namespace WindowsFormsApp1
                         }
                         else
                         {
-                            if (trovato.id != modifiche.id)
+                            int verifica1 = ricercacl(modifiche.id, @"./cancellati.csv");
+                            int verifica2 = ricercacl(modifiche.id, @"./aggiungi.csv");
+                            if (verifica1 != 0 || verifica2 != 0)
                             {
-                                DialogResult dialogResult = MessageBox.Show("sei sicuro di voler modificare il piatto?", "modifica", MessageBoxButtons.YesNo);
-                                if (dialogResult == DialogResult.Yes)
-                                {
-                                    scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti1 + ";" + trovato.ingredienti2 + ";" + trovato.ingredienti3 + ";" + trovato.ingredienti4 + ";" + trovato.prezzo + ";" + "£");
-                                    scriviAppend(@"./aggiungi.csv", modifiche.id + ";" + modifiche.nome + ";" + modifiche.portata + ";" + modifiche.ingredienti1 + ";" + modifiche.ingredienti2 + ";" + modifiche.ingredienti3 + ";" + modifiche.ingredienti4 + ";" + modifiche.prezzo);
-                                    this.Hide();
-                                    modifica Form1 = new modifica();
-                                    Form1.ShowDialog();
-                                    this.Close();
-                                }
-                                else if (dialogResult == DialogResult.No)
-                                {
-
-                                }
+                                MessageBox.Show("si richiede di inseirire un nuovo id");
                             }
                             else
                             {
-                                MessageBox.Show("è obbligatorio la modifica dell'id");
+                                if (trovato.id != modifiche.id)
+                                {
+                                    DialogResult dialogResult = MessageBox.Show("sei sicuro di voler modificare il piatto?", "modifica", MessageBoxButtons.YesNo);
+                                    if (dialogResult == DialogResult.Yes)
+                                    {
+                                        scriviAppend(@"./cancellati.csv", trovato.id + ";" + trovato.nome + ";" + trovato.portata + ";" + trovato.ingredienti1 + ";" + trovato.ingredienti2 + ";" + trovato.ingredienti3 + ";" + trovato.ingredienti4 + ";" + trovato.prezzo + ";" + "£");
+                                        scriviAppend(@"./aggiungi.csv", modifiche.id + ";" + modifiche.nome + ";" + modifiche.portata + ";" + modifiche.ingredienti1 + ";" + modifiche.ingredienti2 + ";" + modifiche.ingredienti3 + ";" + modifiche.ingredienti4 + ";" + modifiche.prezzo);
+                                        this.Hide();
+                                        modifica Form1 = new modifica();
+                                        Form1.ShowDialog();
+                                        this.Close();
+                                    }
+                                    else if (dialogResult == DialogResult.No)
+                                    {
+
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("è obbligatorio la modifica dell'id");
+                                }
                             }
                         }
                     }

@@ -151,6 +151,7 @@ namespace WindowsFormsApp1
             int nuovoid = random.Next(1, 100000);
             scriviAppend(@"./aggiungi.csv", nuovoid + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti1 + ";" + semirecu[point].ingredienti2 + ";" + semirecu[point].ingredienti3 + ";" + semirecu[point].ingredienti4 + ";" + semirecu[point].prezzo);
             scriviAppend(@"./cancellati.csv", semirecu[point].id + ";" + semirecu[point].nome + ";" + semirecu[point].portata + ";" + semirecu[point].ingredienti1 + ";" + semirecu[point].ingredienti2 + ";" + semirecu[point].ingredienti3 + ";" + semirecu[point].ingredienti4 + ";" + semirecu[point].prezzo+";"+"$");
+                MessageBox.Show("piatto recuperato. il suo nuovo id corrisponde a " + nuovoid);
             this.Hide();
             recupero Form1 = new recupero();
             Form1.ShowDialog();
