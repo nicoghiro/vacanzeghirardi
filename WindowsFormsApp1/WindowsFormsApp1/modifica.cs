@@ -151,7 +151,7 @@ namespace WindowsFormsApp1
             modifiche.ingredienti3 = textBox6.Text;
             modifiche.ingredienti4 = textBox7.Text;
             modifiche.prezzo = numericUpDown1.Value;
-            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(textBox5.Text)  || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(textBox5.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox7.Text))
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(textBox5.Text)  || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(textBox5.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox6.Text) || string.IsNullOrWhiteSpace(textBox7.Text))
             {
                 MessageBox.Show("è obbligatorio inserire tutti i parametri del piatto ");
             }
@@ -164,7 +164,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    if (textBox2.Text.Contains(';') || textBox3.Text.Contains(';') || textBox5.Text.Contains(';') || comboBox1.Text.Contains(';'))
+                    if (textBox2.Text.Contains(';') || textBox3.Text.Contains(';') || textBox5.Text.Contains(';') || comboBox1.Text.Contains(';') || textBox4.Text.Contains(';')|| textBox6.Text.Contains(';') || textBox7.Text.Contains(';'))
                     {
                         MessageBox.Show("si richiede di non inserire il carattere ';'");
                     }

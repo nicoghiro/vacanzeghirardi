@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
         {
             menù = ricerca1(@"./aggiungi.csv");
             int cont4 = 0;
-            int x = 300; int ay = 41;
+            int x = 160; int ay = 41;
             int py = 148;
             int sy = 270;
             int dy = 375;
@@ -46,10 +46,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, ay);
-                        menù[cont4].testo.Size = new Size(400, 20);
+                        menù[cont4].testo.Size = new Size(1000, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         ay = ay + 20;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
+                        menù[cont4].testo.Text = "id:" +menù[cont4].id + " nome: " + menù[cont4].nome + " ingredienti: " + menù[cont4].ingredienti1 + " / " + menù[cont4].ingredienti2 + " / " + menù[cont4].ingredienti3 + " / " + menù[cont4].ingredienti4 + " prezzo: " + menù[cont4].prezzo + " €";
                        menù[cont4].testo.Click += new EventHandler(label_Click);
                         
                     }
@@ -59,10 +59,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, py);
-                        menù[cont4].testo.Size = new Size(400, 20);
+                        menù[cont4].testo.Size = new Size(1000, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         py = py + 20;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
+                        menù[cont4].testo.Text = "id:" + menù[cont4].id + " nome: " + menù[cont4].nome + " ingredienti: " + menù[cont4].ingredienti1 + " / " + menù[cont4].ingredienti2 + " / " + menù[cont4].ingredienti3 + " / " + menù[cont4].ingredienti4 + " prezzo: " + menù[cont4].prezzo + " €";
                        menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
@@ -72,10 +72,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, sy);
-                        menù[cont4].testo.Size = new Size(400, 20);
+                        menù[cont4].testo.Size = new Size(1000, 20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         sy = sy + 20;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
+                        menù[cont4].testo.Text = "id:" + menù[cont4].id + " nome: " + menù[cont4].nome + " ingredienti: " + menù[cont4].ingredienti1 + " / " + menù[cont4].ingredienti2 + " / " + menù[cont4].ingredienti3 + " / " + menù[cont4].ingredienti4 + " prezzo: " + menù[cont4].prezzo + " €";
                       menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
@@ -85,10 +85,10 @@ namespace WindowsFormsApp1
                         menù[cont4].testo = new Label();
                         this.Controls.Add(menù[cont4].testo);
                         menù[cont4].testo.Location = new Point(x, dy);
-                        menù[cont4].testo.Size = new Size(400,20);
+                        menù[cont4].testo.Size = new Size(1000,20);
                         menù[cont4].testo.Name = Convert.ToString(cont4);
                         dy = dy + 20;
-                        menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
+                        menù[cont4].testo.Text = "id:" + menù[cont4].id + " nome: " + menù[cont4].nome + " ingredienti: " + menù[cont4].ingredienti1 + " / " + menù[cont4].ingredienti2 + " / " + menù[cont4].ingredienti3 + " / " + menù[cont4].ingredienti4 + " prezzo: " + menù[cont4].prezzo + " €";
                         menù[cont4].testo.Click += new EventHandler(label_Click);
 
                     }
@@ -98,10 +98,10 @@ namespace WindowsFormsApp1
                     menù[cont4].testo = new Label();
                     this.Controls.Add(menù[cont4].testo);
                     menù[cont4].testo.Location = new Point(ox, oy);
-                    menù[cont4].testo.Size = new Size(400, 20);
+                    menù[cont4].testo.Size = new Size(1000, 20);
                     menù[cont4].testo.Name = Convert.ToString(cont4);
                     oy = oy + 20;
-                    menù[cont4].testo.Text = menù[cont4].id + " " + menù[cont4].nome + " " + menù[cont4].ingredienti1 + " " + menù[cont4].ingredienti2 + " " + menù[cont4].ingredienti3 + " " + menù[cont4].ingredienti4 + " " + menù[cont4].prezzo + " €";
+                    menù[cont4].testo.Text = "id:" + menù[cont4].id + " nome: " + menù[cont4].nome + " ingredienti: " + menù[cont4].ingredienti1 + " / " + menù[cont4].ingredienti2 + " / " + menù[cont4].ingredienti3 + " / " + menù[cont4].ingredienti4 + " prezzo: " + menù[cont4].prezzo + " €";
                    menù[cont4].testo.Click += new EventHandler(label_Click);
                 }
 
